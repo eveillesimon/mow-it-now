@@ -20,7 +20,7 @@ class MowingProgramInputParserTest {
                 "AADAADADDA"
         ));
 
-        assertEquals(new LawnSize(5, 5), input.lawnSize());
+        assertEquals(new LawnSize(6, 6), input.lawnSize());
         assertEquals(2, input.programs().size());
 
         assertEquals(

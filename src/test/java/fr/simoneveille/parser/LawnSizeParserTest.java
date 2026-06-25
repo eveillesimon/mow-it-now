@@ -14,14 +14,14 @@ class LawnSizeParserTest {
     void shouldParseValidLawnSize() throws InvalidInputException {
         LawnSize lawnSize = parser.parse(List.of("5 5"));
 
-        assertEquals(new LawnSize(5, 5), lawnSize);
+        assertEquals(new LawnSize(6, 6), lawnSize);
     }
 
     @Test
     void shouldParseLawnSizeWithExtraSpaces() throws InvalidInputException {
         LawnSize lawnSize = parser.parse(List.of("  5   5  "));
 
-        assertEquals(new LawnSize(5, 5), lawnSize);
+        assertEquals(new LawnSize(6, 6), lawnSize);
     }
 
     @Test

@@ -15,9 +15,9 @@ public class LawnSizeParser extends AbstractParser<LawnSize> {
 
         String[] values = splitLine(inputs.getFirst(), 2);
 
-        int maxX = parsePositiveInteger(values[0], "maxX lawnSize");
-        int maxY = parsePositiveInteger(values[1], "maxY lawnSize");
+        int sizeX = parsePositiveInteger(values[0], "sizeX lawnSize") + 1;
+        int sizeY = parsePositiveInteger(values[1], "sizeY lawnSize") + 1;
 
-        return new LawnSize(maxX, maxY);
+        return new LawnSize(sizeX, sizeY);
     }
 }
